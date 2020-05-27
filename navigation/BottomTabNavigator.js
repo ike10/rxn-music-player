@@ -4,8 +4,7 @@ import * as React from 'react';
 import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
-import DiscoverScreen from '../screens/DiscoverScreen'
-import LibraryStackScreen from '../screens/LibraryStackScreen'
+import LibraryScreen from '../screens/LibraryStackScreen'
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
 
@@ -39,14 +38,7 @@ export default function BottomTabNavigator({ navigation, route }) {
         }}
       />
 
-          <BottomTab.Screen
-              name="Discover"
-              component={DiscoverScreen}
-              options={{
-                  title: 'Discover',
-                  tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-wifi" />,
-              }}
-          />
+        
       <BottomTab.Screen
         name="Search"
         component={SearchScreen}
@@ -58,7 +50,7 @@ export default function BottomTabNavigator({ navigation, route }) {
           
           <BottomTab.Screen
               name="Library"
-              component={LibraryStackScreen}
+              component={LibraryScreen}
               options={{
                   title: 'Library',
                   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
