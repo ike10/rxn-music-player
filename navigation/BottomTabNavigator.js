@@ -5,7 +5,7 @@ import TabBarIcon from '../components/TabBarIcon';
 import HomeScreen from '../screens/HomeScreen';
 import SearchScreen from '../screens/SearchScreen';
 import DiscoverScreen from '../screens/DiscoverScreen'
-import LibraryScreen from '../screens/LibraryScreen'
+import LibraryStackScreen from '../screens/LibraryStackScreen'
 const BottomTab = createBottomTabNavigator();
 const INITIAL_ROUTE_NAME = 'Home';
 
@@ -58,7 +58,7 @@ export default function BottomTabNavigator({ navigation, route }) {
           
           <BottomTab.Screen
               name="Library"
-              component={LibraryScreen}
+              component={LibraryStackScreen}
               options={{
                   title: 'Library',
                   tabBarIcon: ({ focused }) => <TabBarIcon focused={focused} name="md-book" />,
