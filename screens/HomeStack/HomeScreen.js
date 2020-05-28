@@ -6,26 +6,26 @@ import { ScrollView } from 'react-native-gesture-handler';
 import { MonoText } from '../components/StyledText';
 
 export default function HomeScreen() {
-  return (
-    <View style={styles.container}>
-      <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
-        
-        
-       
-      </ScrollView>
-    </View>
-  );
+    return (
+        <View style={styles.container}>
+            <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
+
+
+
+            </ScrollView>
+        </View>
+    );
 }
 
 HomeScreen.navigationOptions = {
-  header: null,
+    header: null,
 };
 
 
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-  },
+    container: {
+        flex: 1,
+        backgroundColor: '#fff',
+    },
 })

@@ -2,9 +2,9 @@ import { Ionicons } from '@expo/vector-icons';
 import * as WebBrowser from 'expo-web-browser';
 import * as React from 'react';
 import { createMaterialTopTabNavigator } from '@react-navigation/material-top-tabs';
-import AlbumScreen from './LibraryStack/AlbumScreen'
-import SongScreen from './LibraryStack/SongScreen'
-import ArtistScreen from './LibraryStack/ArtistScreen'
+import AlbumStackScreen from './LibraryStack/AlbumStackScreen'
+import SongStackScreen from './LibraryStack/SongStackScreen'
+import ArtisteStackScreen from './LibraryStack/ArtisteStackScreen'
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -20,9 +20,9 @@ export default function LibraryStackScreen() {
                 style: { backgroundColor: 'powderblue' },
             }}
         >
-            <Tab.Screen name="Songs" component={SongScreen} />
-            <Tab.Screen name="Album" component={AlbumScreen} />
-            <Tab.Screen name="Artists" component={ArtistScreen} />
+            <Tab.Screen name="Songs" component={SongStackScreen} />
+            <Tab.Screen name="Album" component={AlbumStackScreen} />
+            <Tab.Screen name="Artists" component={ArtisteStackScreen} />
         </Tab.Navigator>
     );
 }
