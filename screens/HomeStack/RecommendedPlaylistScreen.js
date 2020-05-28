@@ -5,7 +5,7 @@ import { ScrollView } from 'react-native-gesture-handler';
 
 import { MonoText } from '../../components/StyledText';
 
-export default function MostPlayedScreen() {
+export default function RecommendedPlaylistScreen() {
     return (
         <View style={styles.container}>
             <ScrollView style={styles.container} contentContainerStyle={styles.contentContainer}>
@@ -16,6 +16,7 @@ export default function MostPlayedScreen() {
         </View>
     );
 }
+
 
 
 

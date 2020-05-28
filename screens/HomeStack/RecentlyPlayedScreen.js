@@ -17,9 +17,6 @@ export default function RecentlyPlayedScreen() {
     );
 }
 
-HomeScreen.navigationOptions = {
-    header: null,
-};
 
 
 

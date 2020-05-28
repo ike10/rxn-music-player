@@ -12,8 +12,8 @@ import CurrentArtisteScreen from './ArtisteStack/CurrentArtisteScreen'
 const Stack = createStackNavigator();
 export default function ArtisteStackScreen() {
     return (
-        <Stack.Navigator>
-            <Stack.Screen name="Artiste" component={ArtisteScreen} />
+        <Stack.Navigator initialRouteName="Artistes" screenOptions={{ headerShown: false }}>
+            <Stack.Screen name="Artistes" component={ArtisteScreen} />
             <Stack.Screen name="Current Artiste" component={CurrentArtisteScreen} />
         </Stack.Navigator>
     );

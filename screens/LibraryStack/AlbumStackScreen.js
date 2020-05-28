@@ -12,7 +12,7 @@ import CurrentAlbumScreen from './AlbumStack/CurrentAlbumScreen'
 const Stack = createStackNavigator();
 export default function AlbumStackScreen() {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="Album" screenOptions={{headerShown:false}}>
             <Stack.Screen name="Album" component={AlbumScreen} />
             <Stack.Screen name="Current Album" component={CurrentAlbumScreen} />
         </Stack.Navigator>

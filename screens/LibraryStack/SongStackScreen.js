@@ -12,7 +12,7 @@ import SongScreen from './SongStack/SongScreen'
 const Stack = createStackNavigator();
 export default function SongStackScreen({ navigation, route }) {
     return (
-        <Stack.Navigator>
+        <Stack.Navigator initialRouteName="Songs" screenOptions={{ headerShown: false }}>
             <Stack.Screen name="Songs" component={SongScreen} />
         </Stack.Navigator>
     );

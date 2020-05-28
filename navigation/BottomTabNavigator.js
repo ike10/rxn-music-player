@@ -20,8 +20,8 @@ export default function BottomTabNavigator({ navigation, route }) {
       headerTintColor: '#fff',
       headerTitleStyle: {
           fontWeight: 'bold',
-         
       },
+      headerShown:false,
  });
 
   return (

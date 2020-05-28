@@ -13,8 +13,11 @@ import RecentlyPlayedScreen from './HomeStack/RecentlyPlayedScreen'
 const Stack = createStackNavigator();
 export default function HomeStackScreen({ navigation, route }) {
     return (
-        <Stack.Navigator>
-            <Stack.Screen name="Home" component={HomeScreen} />
+        <Stack.Navigator initialRouteName="Home" screenOptions={{
+            headerMode:'none',
+            headerShown:false,
+        }}>
+            <Stack.Screen name="Home" component={HomeScreen}/>
             <Stack.Screen name="Currently Playing" component={CurrentlyPlayingScreen} />
             <Stack.Screen name="Recently Played" component={MostPlayedScreen} />
             <Stack.Screen name="Most Played" component={RecentlyPlayedScreen} />
