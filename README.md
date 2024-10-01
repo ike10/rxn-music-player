@@ -1,6 +1,7 @@
 # Exploiting Optimistic Rollups: A Deep Dive into Fraud Proof Vulnerabilities
 
 **Author**: Oche 
+---
 **Date**: January 2024  
 
 ---
